@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "patan"
-    ]
+    ],
+    "eslint.enable": false
 }

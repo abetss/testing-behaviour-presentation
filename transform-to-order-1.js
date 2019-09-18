@@ -23,6 +23,17 @@ const input = {
   ]
 }
 
+const output = {
+  orderDate: 2018-10-04,
+  name: '-> Mr Patan Su',
+  totalPayable: '$15',
+  payableItems: [{
+    title: "book 1",
+    originalPrice: "$12",
+    discountedPrice: "$10"
+  }, {}, {}]
+}
+
 const transformOrderToReceipt = ({orderDate, firstName, lastName, title, debit, items}) => {
   // formating date to yyyy-mm-dd
   const date = new Date(orderDate)
@@ -57,3 +68,11 @@ const transformOrderToReceipt = ({orderDate, firstName, lastName, title, debit, 
     payableItems: formattedPayableItems
   }
 }
+
+describe('transformOrderToReceipt')
+-- describe('name')
+-- it('given firstName: ab, lastName: jj, title: Mr, should display -> Mr Ab Jj ')
+-- it('given firstName: ab, lastName: jj, title: mr, should display -> Mr Ab Jj ')
+-- it('given firstName: ab, lastName: jj, should display -> Ab Jj ')
+
+
