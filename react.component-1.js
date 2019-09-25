@@ -29,3 +29,8 @@ const SignInScene = props => (
     {!props.showSiteSignIn && <Login />}
   </div>
 )
+
+
+// does verifying SignInScene calls <Login /> with the expected props when showSiteSignIn
+// testing implementation or behaviour? Does it give us the most confidence.
+
